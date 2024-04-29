@@ -1,0 +1,84 @@
+@import "../../colors.scss";
+
+.product {
+  margin: auto;
+  padding-top: 33px;
+  display: flex;
+  gap: 30px;
+  width: $desktop;
+}
+
+.left {
+  width: fit-content;
+
+  .slider {
+    border: 1px solid #ededed;
+    border-radius: 8px;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  .features {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.09px;
+    color: #626262;
+
+    .subtitle {
+      color: $secondary;
+    }
+  }
+}
+
+.right {
+  flex-grow: 1;
+}
+
+.versions {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.disclaimer {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 12.8px;
+  font-weight: 500;
+  line-height: 15.28px;
+  color: #9a9a9a;
+}
+
+.accesories {
+  .subtitle {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .slider {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
